@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#tblfadeout").click(function() {
+                $("#box").fadeOut("slow");
+            })
+
+            $("#tblfadein").click(function() {
+                $("#box").fadeIn("slow");
+            })
+            $("#tblfadeto").click(function() {
+                $("#box").fadeTo("slow", 0.3);
+            })
+
+        });
+    </script>
+    <style>
+        #box {
+            width: 300px;
+            height: 200px;
+            background-color: orange;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="tblfadeout">FadeOut</button>
+    <button id="tblfadein">FadeIn</button>
+    <button id="tblfadeto">Fade to 0.3</button>
+    <br><br>
+    <div id="box"></div>
+</body>
+
+</html>
